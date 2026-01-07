@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GPOC Dashboard</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<div class="app">
+
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <div class="logo">GPOC<br><span>Staff Portal</span></div>
+
+    <nav>
+      <a class="active" href="index.html">Dashboard</a>
+      <a href="packages.html">Packages</a>
+      <a href="add-package.html">Add Package</a>
+      <a href="staff.html">Staff</a>
+      <a href="branches.html">Branches</a>
+      <a href="reports.html">Reports</a>
+      <a href="settings.html">Settings</a>
+    </nav>
+
+    <button class="logout">Logout</button>
+  </aside>
+
+  <!-- Main Content -->
+  <main class="main">
+
+    <!-- Top Bar -->
+    <header class="topbar">
+      <div>
+        <h1>Guyana Post Office Corporation · Dashboard</h1>
+        <p>Welcome back, manage your deliveries</p>
+      </div>
+
+      <div class="top-actions">
+        <input type="text" placeholder="Search packages..." />
+        <div class="user">KT</div>
+      </div>
+    </header>
+
+    <!-- Meta Row -->
+    <div class="meta-row">
+      <div class="meta-left">Last updated: <strong>03:15 PM</strong></div>
+      <button class="ghost">Refresh Data</button>
+    </div>
+
+    <!-- Stats -->
+    <section class="stats">
+      <div class="card">
+        <div class="icon-pill">📦</div>
+        <h2>247</h2>
+        <p>Total Packages Today</p>
+      </div>
+      <div class="card">
+        <div class="icon-pill">🚚</div>
+        <h2>68</h2>
+        <p>Out for Delivery</p>
+      </div>
+      <div class="card">
+        <div class="icon-pill">✅</div>
+        <h2>142</h2>
+        <p>Delivered Today</p>
+      </div>
+      <div class="card">
+        <div class="icon-pill">⛔</div>
+        <h2>12</h2>
+        <p>Delayed</p>
+      </div>
+    </section>
+
+    <!-- Flagged Packages -->
+    <section class="flagged">
+      <div class="section-header">
+        <div class="title-with-count">
+          <h3>Flagged Packages</h3>
+          <span class="count-badge">4</span>
+        </div>
+        <button class="danger-outline">View All Issues</button>
+      </div>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Priority</th>
+            <th>Tracking Number</th>
+            <th>Receiver</th>
+            <th>Issue</th>
+            <th>Last Update</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><span class="dot red"></span></td>
+            <td class="link">GY321654987</td>
+            <td>David Wilson</td>
+            <td><span class="badge danger">Delayed at Customs</span></td>
+            <td>3 hours ago</td>
+            <td class="link">Resolve</td>
+          </tr>
+          <tr>
+            <td><span class="dot orange"></span></td>
+            <td class="link">GY741852963</td>
+            <td>Amanda White</td>
+            <td><span class="badge warning">Delivery Attempt Failed</span></td>
+            <td>5 hours ago</td>
+            <td class="link">Resolve</td>
+          </tr>
+          <tr>
+            <td><span class="dot orange"></span></td>
+            <td class="link">GY987654321</td>
+            <td>Sarah Johnson</td>
+            <td><span class="badge warning">Address Verification Required</span></td>
+            <td>1 day ago</td>
+            <td class="link">Resolve</td>
+          </tr>
+          <tr>
+            <td><span class="dot red"></span></td>
+            <td class="link">GY456123789</td>
+            <td>Michael Chen</td>
+            <td><span class="badge info">Customs Hold</span></td>
+            <td>2 days ago</td>
+            <td class="link">Resolve</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Recent Packages -->
+    <section class="recent">
+      <div class="section-header">
+        <h3>Recent Packages</h3>
+        <button class="primary-outline">View All</button>
+      </div>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Tracking Number</th>
+            <th>Receiver</th>
+            <th>Status</th>
+            <th>Last Updated</th>
+            <th>Branch</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="link">GY123456789</td>
+            <td>John Smith</td>
+            <td><span class="badge info">Out for Delivery</span></td>
+            <td>10 mins ago</td>
+            <td>Georgetown</td>
+            <td class="link">View</td>
+          </tr>
+          <tr>
+            <td class="link">GY987654321</td>
+            <td>Sarah Johnson</td>
+            <td><span class="badge success">Delivered</span></td>
+            <td>25 mins ago</td>
+            <td>Diamond</td>
+            <td class="link">View</td>
+          </tr>
+          <tr>
+            <td class="link">GY456789123</td>
+            <td>Michael Brown</td>
+            <td><span class="badge neutral">In Transit</span></td>
+            <td>1 hour ago</td>
+            <td>New Amsterdam</td>
+            <td class="link">View</td>
+          </tr>
+          <tr>
+            <td class="link">GY789123456</td>
+            <td>Emily Davis</td>
+            <td><span class="badge purple">Customs Clearance</span></td>
+            <td>2 hours ago</td>
+            <td>Georgetown</td>
+            <td class="link">View</td>
+          </tr>
+          <tr>
+            <td class="link">GY321654987</td>
+            <td>David Wilson</td>
+            <td><span class="badge danger">Delayed</span></td>
+            <td>3 hours ago</td>
+            <td>Linden</td>
+            <td class="link">View</td>
+          </tr>
+          <tr>
+            <td class="link">GY654987321</td>
+            <td>Lisa Anderson</td>
+            <td><span class="badge info">Out for Delivery</span></td>
+            <td>4 hours ago</td>
+            <td>Georgetown</td>
+            <td class="link">View</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+  </main>
+</div>
+
+</body>
+</html>

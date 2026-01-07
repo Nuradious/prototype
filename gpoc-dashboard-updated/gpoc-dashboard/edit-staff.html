@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Edit Staff Member · GPOC</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<div class="app">
+
+  <aside class="sidebar">
+    <div class="logo">GPOC<br><span>Staff Portal</span></div>
+    <nav>
+      <a href="index.html">Dashboard</a>
+      <a href="packages.html">Packages</a>
+      <a href="add-package.html">Add Package</a>
+      <a class="active" href="staff.html">Staff</a>
+      <a href="branches.html">Branches</a>
+      <a href="reports.html">Reports</a>
+      <a href="settings.html">Settings</a>
+    </nav>
+    <button class="logout">Logout</button>
+  </aside>
+
+  <main class="main">
+
+    <header class="topbar">
+      <div>
+        <div class="breadcrumb">
+          <a href="index.html" class="link">Dashboard</a> ›
+          <a href="staff.html" class="link">Staff</a> ›
+          Edit Staff Member
+        </div>
+        <h1>Guyana Post Office Corporation · Edit Staff Member</h1>
+        <p>Update staff member information</p>
+      </div>
+
+      <div class="top-actions">
+        <input type="text" placeholder="Search packages..." />
+        <div class="user">KT</div>
+      </div>
+    </header>
+
+    <a class="back-link" href="staff.html">← Back to Staff Management</a>
+
+    <section>
+      <h3>Edit Staff Member – Robert Chen</h3>
+      <p class="muted">Update the staff member's information below.</p>
+
+      <div class="subhead">Basic Information</div>
+      <div class="divider"></div>
+
+      <form class="form-grid">
+        <div>
+          <label>Full Name <span class="req">*</span></label>
+          <div class="icon-input">
+            <span class="i">👤</span>
+            <input type="text" value="Robert Chen" />
+          </div>
+        </div>
+
+        <div>
+          <label>Email Address <span class="req">*</span></label>
+          <div class="icon-input">
+            <span class="i">✉️</span>
+            <input type="email" value="robert.chen@guyanapost.gy" />
+          </div>
+        </div>
+
+        <div>
+          <label>Phone Number <span class="req">*</span></label>
+          <div class="icon-input">
+            <span class="i">📞</span>
+            <input type="text" value="+592-222-4567" />
+          </div>
+        </div>
+
+        <div>
+          <label>Staff ID <span class="muted">(Read-only)</span></label>
+          <div class="icon-input readonly">
+            <span class="i">🔒</span>
+            <input type="text" value="ST001" readonly />
+          </div>
+          <small class="hint">Staff ID cannot be changed</small>
+        </div>
+
+        <div>
+          <label>Role <span class="req">*</span></label>
+          <div class="icon-input">
+            <span class="i">🧰</span>
+            <select>
+              <option selected>Delivery Driver</option>
+              <option>Supervisor</option>
+              <option>Delivery Manager</option>
+            </select>
+          </div>
+        </div>
+
+        <div>
+          <label>Branch <span class="req">*</span></label>
+          <div class="icon-input">
+            <span class="i">🏢</span>
+            <select>
+              <option selected>Diamond</option>
+              <option>Georgetown Central</option>
+              <option>Linden</option>
+            </select>
+          </div>
+        </div>
+
+        <div>
+          <label>Status <span class="req">*</span></label>
+          <div class="icon-input">
+            <span class="i">🟢</span>
+            <select>
+              <option selected>Active</option>
+              <option>Inactive</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="full">
+          <div class="subhead">Reset Password <span class="muted">(Optional)</span></div>
+          <p class="muted" style="margin:8px 0 10px;">Leave these fields empty if you don't want to change the password.</p>
+        </div>
+
+        <div>
+          <label>New Password</label>
+          <div class="icon-input">
+            <span class="i">🔒</span>
+            <input type="password" placeholder="Enter new password" />
+          </div>
+          <small class="hint">Must be at least 8 characters</small>
+        </div>
+
+        <div>
+          <label>Confirm New Password</label>
+          <div class="icon-input">
+            <span class="i">🔒</span>
+            <input type="password" placeholder="Confirm new password" />
+          </div>
+        </div>
+
+        <div class="form-actions full">
+          <button type="button" class="btn primary">Save Changes</button>
+          <button type="reset" class="btn ghost">Cancel</button>
+        </div>
+      </form>
+    </section>
+
+  </main>
+</div>
+
+</body>
+</html>

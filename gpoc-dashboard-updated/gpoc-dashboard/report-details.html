@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Report Details · GPOC</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<div class="app">
+
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <div class="logo">GPOC<br><span>Staff Portal</span></div>
+    <nav>
+      <a href="index.html">Dashboard</a>
+      <a href="packages.html">Packages</a>
+      <a href="add-package.html">Add Package</a>
+      <a href="staff.html">Staff</a>
+      <a href="branches.html">Branches</a>
+      <a class="active" href="reports.html">Reports</a>
+      <a href="settings.html">Settings</a>
+    </nav>
+    <button class="logout">Logout</button>
+  </aside>
+
+  <main class="main">
+
+    <!-- Header -->
+    <header class="topbar">
+      <div>
+        <div class="breadcrumb">
+          <a href="index.html" class="link">Dashboard</a> ›
+          <a href="reports.html" class="link">Reports</a> ›
+          Report Details
+        </div>
+        <h1>Guyana Post Office Corporation · Report Details</h1>
+        <p>Comprehensive charts and visual analytics</p>
+      </div>
+
+      <div class="top-actions">
+        <input type="text" placeholder="Search packages..." />
+        <div class="user">KT</div>
+      </div>
+    </header>
+
+    <a class="back-link" href="reports.html">← Back to Summary</a>
+
+    <!-- Charts -->
+    <div class="grid-2">
+      <section>
+        <h3>Packages by Week</h3>
+        <div class="chart-placeholder bar">
+          <div class="bars">
+            <span style="height:70%"></span>
+            <span style="height:85%"></span>
+            <span style="height:78%"></span>
+            <span style="height:75%"></span>
+          </div>
+          <div class="labels">
+            <span>Week 1</span><span>Week 2</span><span>Week 3</span><span>Week 4</span>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h3>Package Status Breakdown</h3>
+        <div class="chart-placeholder pie">
+          <div class="pie-label green">Delivered: 72%</div>
+          <div class="pie-label orange">In Transit: 23%</div>
+          <div class="pie-label red">Delayed: 6%</div>
+          <div class="pie-label muted">Returned: 0%</div>
+        </div>
+      </section>
+    </div>
+
+    <!-- Export -->
+    <section class="export-row">
+      <strong>Export Options:</strong>
+      <button class="ghost">Export as PDF</button>
+      <button class="ghost">Export as CSV</button>
+      <button class="ghost">Print Report</button>
+    </section>
+
+    <!-- Table -->
+    <section>
+      <h3>Monthly Package Overview</h3>
+      <p class="muted">Detailed breakdown of all packages for the selected period</p>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Tracking Number</th>
+            <th>Customer Name</th>
+            <th>Branch</th>
+            <th>Status</th>
+            <th>Delivery Option</th>
+            <th>Date Created</th>
+            <th>Date Delivered</th>
+            <th>Delayed</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="link">GPO-2024-15478</td>
+            <td>Sarah Johnson</td>
+            <td>Georgetown Central</td>
+            <td><span class="badge success">Delivered</span></td>
+            <td>Home</td>
+            <td>2024-11-02</td>
+            <td>2024-11-04</td>
+            <td>No</td>
+          </tr>
+          <tr>
+            <td class="link">GPO-2024-15480</td>
+            <td>Amanda Williams</td>
+            <td>New Amsterdam</td>
+            <td><span class="badge neutral">In Transit</span></td>
+            <td>Home</td>
+            <td>2024-11-05</td>
+            <td>-</td>
+            <td>No</td>
+          </tr>
+          <tr>
+            <td class="link">GPO-2024-15482</td>
+            <td>Jennifer Martinez</td>
+            <td>Linden</td>
+            <td><span class="badge danger">Delayed</span></td>
+            <td>Home</td>
+            <td>2024-11-04</td>
+            <td>-</td>
+            <td>Yes</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="pagination">
+        <span>Showing 1 to 10 of 15 entries</span>
+        <div>
+          <button class="ghost">Previous</button>
+          <button class="primary-outline">1</button>
+          <button class="ghost">2</button>
+          <button class="ghost">Next</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Notes -->
+    <section>
+      <h3>Internal Notes</h3>
+      <p class="muted">Add notes about this report (not visible to customers)</p>
+      <textarea class="notes" placeholder="Enter internal notes, observations, or action items here..."></textarea>
+      <div style="margin-top:12px;text-align:right;">
+        <button class="btn primary">Save Notes</button>
+      </div>
+    </section>
+
+  </main>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Add Package · GPOC</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<div class="app">
+
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <div class="logo">GPOC<br><span>Staff Portal</span></div>
+    <nav>
+      <a href="index.html">Dashboard</a>
+      <a href="packages.html">Packages</a>
+      <a class="active" href="add-package.html">Add Package</a>
+      <a href="staff.html">Staff</a>
+      <a href="branches.html">Branches</a>
+      <a href="reports.html">Reports</a>
+      <a href="settings.html">Settings</a>
+    </nav>
+    <button class="logout">Logout</button>
+  </aside>
+
+  <main class="main">
+
+    <!-- Header -->
+    <header class="topbar">
+      <div>
+        <div class="breadcrumb">
+          <a href="index.html" class="link">Dashboard</a> ›
+          <a href="packages.html" class="link">Packages</a> ›
+          Add Package
+        </div>
+        <h1>Guyana Post Office Corporation · Add Package</h1>
+        <p>Register a new package into the system</p>
+      </div>
+
+      <div class="top-actions">
+        <input type="text" placeholder="Search packages..." />
+        <div class="user">KT</div>
+      </div>
+    </header>
+
+    <a class="back-link" href="packages.html">← Back</a>
+
+    <!-- Add Package Form -->
+    <section>
+      <div class="section-header">
+        <h3>Add New Package</h3>
+      </div>
+
+      <p class="muted">Register a new package into the tracking system</p>
+
+      <form class="form-grid">
+        <div>
+          <label>Tracking Number <span class="req">*</span></label>
+          <input type="text" placeholder="e.g., GY123456789" />
+          <small class="hint">Must be unique in the system</small>
+        </div>
+
+        <div>
+          <label>Branch <span class="req">*</span></label>
+          <select>
+            <option>Select branch...</option>
+            <option>Georgetown Central</option>
+            <option>Linden</option>
+          </select>
+        </div>
+
+        <div>
+          <label>Sender Name <span class="req">*</span></label>
+          <input type="text" placeholder="e.g., Amazon Fulfillment Center" />
+        </div>
+
+        <div>
+          <label>Origin Country <span class="req">*</span></label>
+          <input type="text" placeholder="e.g., United States" />
+        </div>
+
+        <div>
+          <label>Receiver Name <span class="req">*</span></label>
+          <input type="text" placeholder="e.g., John Smith" />
+        </div>
+
+        <div>
+          <label>Receiver Phone <span class="req">*</span></label>
+          <input type="text" placeholder="e.g., +592-222-3456" />
+        </div>
+
+        <div class="full">
+          <label>Destination Address <span class="req">*</span></label>
+          <input type="text" placeholder="e.g., 123 Main Street, Georgetown, Guyana" />
+        </div>
+
+        <div>
+          <label>Package Type <span class="req">*</span></label>
+          <select>
+            <option>Select package type...</option>
+            <option>Standard</option>
+            <option>Express</option>
+          </select>
+        </div>
+
+        <div>
+          <label>Weight (kg) <span class="req">*</span></label>
+          <input type="number" step="0.1" placeholder="e.g., 2.5" />
+        </div>
+
+        <div class="form-actions full">
+          <button type="button" class="btn primary">Create Package</button>
+          <button type="reset" class="btn ghost">Cancel</button>
+        </div>
+      </form>
+    </section>
+
+    <!-- Guidelines -->
+    <section class="guidelines">
+      <h3>Package Registration Guidelines</h3>
+      <ul>
+        <li>Ensure the tracking number is unique and follows the format: GY + 9 digits</li>
+        <li>Verify receiver contact information before submitting</li>
+        <li>Weight should be entered in kilograms (kg)</li>
+        <li>Double-check the destination address for accuracy</li>
+      </ul>
+    </section>
+
+    <!-- Shipping Label -->
+    <section>
+      <div class="section-header">
+        <h3>Shipping Label</h3>
+      </div>
+
+      <p class="muted">Generate and print shipping labels for this package</p>
+
+      <div class="form-grid">
+        <div>
+          <label>Label Type</label>
+          <select>
+            <option>Standard</option>
+            <option>Express</option>
+          </select>
+        </div>
+
+        <div class="form-actions full">
+          <button class="btn primary">Generate Label</button>
+        </div>
+      </div>
+
+      <div class="empty-state">
+        Fill in the package details above and click “Generate Label” to create a shipping label.
+      </div>
+    </section>
+
+  </main>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Monthly Reports · GPOC</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<div class="app">
+
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <div class="logo">GPOC<br><span>Staff Portal</span></div>
+
+    <nav>
+      <a href="index.html">Dashboard</a>
+      <a href="packages.html">Packages</a>
+      <a href="add-package.html">Add Package</a>
+      <a href="staff.html">Staff</a>
+      <a href="branches.html">Branches</a>
+      <a class="active" href="reports.html">Reports</a>
+      <a href="settings.html">Settings</a>
+    </nav>
+
+    <button class="logout">Logout</button>
+  </aside>
+
+  <!-- Main -->
+  <main class="main">
+
+    <!-- Topbar -->
+    <header class="topbar">
+      <div>
+        <div class="breadcrumb">
+          <a href="index.html" class="link">Dashboard</a> › Monthly Reports
+        </div>
+        <h1>Guyana Post Office Corporation · Monthly Reports</h1>
+        <p>View monthly reports and analytics</p>
+      </div>
+
+      <div class="top-actions">
+        <input type="text" placeholder="Search packages..." />
+        <div class="user">KT</div>
+      </div>
+    </header>
+
+    <!-- Report Filters -->
+    <section>
+      <div class="filters-grid reports-filters">
+        <div>
+          <label>Month</label>
+          <select>
+            <option>November</option>
+            <option>October</option>
+            <option>September</option>
+          </select>
+        </div>
+
+        <div>
+          <label>Year</label>
+          <select>
+            <option>2024</option>
+            <option>2023</option>
+          </select>
+        </div>
+
+        <div>
+          <label>Branch</label>
+          <select>
+            <option>All Branches</option>
+            <option>Georgetown</option>
+            <option>Linden</option>
+          </select>
+        </div>
+
+        <div class="filter-action">
+          <button class="btn primary">Generate Report</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Report Stats -->
+    <section class="stats reports-stats">
+      <div class="card report blue">
+        <div class="icon-pill">📦</div>
+        <h2>1,247</h2>
+        <p>Total Packages</p>
+        <div class="delta up">↑ 12.5% <span>vs last month</span></div>
+      </div>
+
+      <div class="card report green">
+        <div class="icon-pill">✅</div>
+        <h2>892</h2>
+        <p>Delivered</p>
+        <div class="delta up">↑ 8.3% <span>vs last month</span></div>
+      </div>
+
+      <div class="card report orange">
+        <div class="icon-pill">🚚</div>
+        <h2>284</h2>
+        <p>In-Transit</p>
+        <div class="delta down">↓ 5.2% <span>vs last month</span></div>
+      </div>
+
+      <div class="card report red">
+        <div class="icon-pill">⏰</div>
+        <h2>71</h2>
+        <p>Delayed</p>
+        <div class="delta up">↑ 15.8% <span>vs last month</span></div>
+      </div>
+    </section>
+
+    <!-- Detailed Analytics -->
+    <section class="analytics-cta">
+      <div>
+        <h3>Detailed Analytics</h3>
+        <p class="muted">
+          View comprehensive charts, graphs, and visual breakdowns of your monthly data
+        </p>
+      </div>
+      <button class="btn primary"><a href="report-details.html" class="btn primary">View Detailed Analytics</a></button>
+    </section>
+
+  </main>
+</div>
+
+</body>
+</html>

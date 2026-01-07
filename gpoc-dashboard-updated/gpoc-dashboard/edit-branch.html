@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Edit Branch · GPOC</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<div class="app">
+
+  <aside class="sidebar">
+    <div class="logo">GPOC<br><span>Staff Portal</span></div>
+    <nav>
+      <a href="index.html">Dashboard</a>
+      <a href="packages.html">Packages</a>
+      <a href="add-package.html">Add Package</a>
+      <a href="staff.html">Staff</a>
+      <a class="active" href="branches.html">Branches</a>
+      <a href="reports.html">Reports</a>
+      <a href="settings.html">Settings</a>
+    </nav>
+    <button class="logout">Logout</button>
+  </aside>
+
+  <main class="main">
+
+    <header class="topbar">
+      <div>
+        <div class="breadcrumb">
+          <a href="index.html" class="link">Dashboard</a> ›
+          <a href="branches.html" class="link">Branches</a> ›
+          Edit Branch
+        </div>
+        <h1>Guyana Post Office Corporation · Edit Branch</h1>
+        <p>Update branch information</p>
+      </div>
+
+      <div class="top-actions">
+        <input type="text" placeholder="Search packages..." />
+        <div class="user">KT</div>
+      </div>
+    </header>
+
+    <!-- Branch stats (colored borders like frame) -->
+    <section class="stats edit-branch-stats">
+      <div class="card report blue">
+        <div class="icon-pill">👥</div>
+        <h2>24</h2>
+        <p>Total Staff</p>
+      </div>
+      <div class="card report orange">
+        <div class="icon-pill">📦</div>
+        <h2>156</h2>
+        <p>Active Packages</p>
+      </div>
+      <div class="card report green">
+        <div class="icon-pill">✅</div>
+        <h2>1247</h2>
+        <p>Completed Packages</p>
+      </div>
+    </section>
+
+    <section>
+      <h3>Edit Branch – Georgetown Central</h3>
+      <p class="muted">Update the branch information below.</p>
+
+      <div class="subhead">Branch Information</div>
+      <div class="divider"></div>
+
+      <form class="form-grid">
+        <div>
+          <label>Branch Name <span class="req">*</span></label>
+          <div class="icon-input">
+            <span class="i">🏢</span>
+            <input type="text" value="Georgetown Central" />
+          </div>
+        </div>
+
+        <div>
+          <label>Branch Manager <span class="req">*</span></label>
+          <div class="icon-input">
+            <span class="i">👤</span>
+            <select>
+              <option selected>Michelle Williams</option>
+              <option>David Kumar</option>
+              <option>James Taylor</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="full">
+          <label>Address / Location <span class="req">*</span></label>
+          <div class="icon-input">
+            <span class="i">📍</span>
+            <input type="text" placeholder="Enter complete address..." />
+          </div>
+        </div>
+
+        <div>
+          <label>Contact Phone Number <span class="req">*</span></label>
+          <div class="icon-input">
+            <span class="i">📞</span>
+            <input type="text" value="+592-226-4211" />
+          </div>
+        </div>
+
+        <div>
+          <label>Contact Email <span class="req">*</span></label>
+          <div class="icon-input">
+            <span class="i">✉️</span>
+            <input type="email" value="georgetown@guyanapost.gy" />
+          </div>
+        </div>
+
+        <div>
+          <label>Status <span class="req">*</span></label>
+          <div class="icon-input">
+            <span class="i">🟢</span>
+            <select>
+              <option selected>Active</option>
+              <option>Inactive</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-actions full">
+          <button type="button" class="btn primary">Save Changes</button>
+          <button type="reset" class="btn ghost">Cancel</button>
+        </div>
+      </form>
+    </section>
+
+  </main>
+</div>
+
+</body>
+</html>

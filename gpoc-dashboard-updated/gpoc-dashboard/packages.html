@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Packages · GPOC</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<div class="app">
+
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <div class="logo">GPOC<br><span>Staff Portal</span></div>
+
+    <nav>
+      <a href="index.html">Dashboard</a>
+      <a class="active" href="packages.html">Packages</a>
+      <a href="add-package.html">Add Package</a>
+      <a href="staff.html">Staff</a>
+      <a href="branches.html">Branches</a>
+      <a href="reports.html">Reports</a>
+      <a href="settings.html">Settings</a>
+    </nav>
+
+    <button class="logout">Logout</button>
+  </aside>
+
+  <!-- Main -->
+  <main class="main">
+
+    <!-- Topbar -->
+    <header class="topbar">
+      <div>
+        <div style="font-size:13px;color:#6b7280;margin-bottom:6px;">
+          <a href="index.html" class="link">Dashboard</a> › Packages
+        </div>
+        <h1>Guyana Post Office Corporation · Packages</h1>
+        <p>Manage and track all packages in the system</p>
+      </div>
+
+      <div class="top-actions">
+        <input type="text" placeholder="Search packages..." />
+        <div class="user">KT</div>
+      </div>
+    </header>
+
+    <!-- Filters -->
+    <section>
+      <div class="section-header">
+        <h3>Filters</h3>
+      </div>
+
+      <div class="filters-grid">
+        <div>
+          <label>Search</label>
+          <input type="text" placeholder="Tracking number..." />
+        </div>
+
+        <div>
+          <label>Status</label>
+          <select>
+            <option>All Statuses</option>
+          </select>
+        </div>
+
+        <div>
+          <label>Branch</label>
+          <select>
+            <option>All Branches</option>
+          </select>
+        </div>
+
+        <div>
+          <label>Delivery Option</label>
+          <select>
+            <option>All Options</option>
+          </select>
+        </div>
+
+        <div>
+          <label>Date Range</label>
+          <select>
+            <option>All Time</option>
+          </select>
+        </div>
+      </div>
+
+      <div style="margin-top:12px;color:#6b7280;font-size:13px;">
+        Showing 1–8 of 10 packages
+      </div>
+    </section>
+
+    <!-- Packages Table -->
+    <section>
+      <table>
+        <thead>
+          <tr>
+            <th>Tracking Number</th>
+            <th>Receiver</th>
+            <th>Current Status</th>
+            <th>Last Update</th>
+            <th>Delivery Option</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="link">GY123456789</td>
+            <td>John Smith</td>
+            <td><span class="badge warning">Out for Delivery</span></td>
+            <td>2024-01-16 10:30 AM</td>
+            <td><span class="badge purple">Home</span></td>
+            <td class="link"><a class="link" href="package-details.html">View</a> &nbsp; <a class="link" href="package-details.html">Update</a></td>
+          </tr>
+          <tr>
+            <td class="link">GY987654321</td>
+            <td>Sarah Johnson</td>
+            <td><span class="badge success">Delivered</span></td>
+            <td>2024-01-16 09:45 AM</td>
+            <td><span class="badge purple">Home</span></td>
+            <td class="link"><a class="link" href="package-details.html">View</a> &nbsp; <a class="link" href="package-details.html">Update</a></td>
+          </tr>
+          <tr>
+            <td class="link">GY456789123</td>
+            <td>Michael Brown</td>
+            <td><span class="badge neutral">In Transit</span></td>
+            <td>2024-01-16 08:15 AM</td>
+            <td><span class="badge info">Pickup</span></td>
+            <td class="link"><a class="link" href="package-details.html">View</a> &nbsp; <a class="link" href="package-details.html">Update</a></td>
+          </tr>
+          <tr>
+            <td class="link">GY789123456</td>
+            <td>Emily Davis</td>
+            <td><span class="badge neutral">In Transit</span></td>
+            <td>2024-01-16 07:20 AM</td>
+            <td><span class="badge purple">Home</span></td>
+            <td class="link"><a class="link" href="package-details.html">View</a> &nbsp; <a class="link" href="package-details.html">Update</a></td>
+          </tr>
+          <tr>
+            <td class="link">GY321654987</td>
+            <td>David Wilson</td>
+            <td><span class="badge danger">Delayed</span></td>
+            <td>2024-01-15 04:30 PM</td>
+            <td><span class="badge purple">Home</span></td>
+            <td class="link"><a class="link" href="package-details.html">View</a> &nbsp; <a class="link" href="package-details.html">Update</a></td>
+          </tr>
+          <tr>
+            <td class="link">GY654987321</td>
+            <td>Lisa Anderson</td>
+            <td><span class="badge warning">Out for Delivery</span></td>
+            <td>2024-01-16 11:00 AM</td>
+            <td><span class="badge info">Pickup</span></td>
+            <td class="link"><a class="link" href="package-details.html">View</a> &nbsp; <a class="link" href="package-details.html">Update</a></td>
+          </tr>
+          <tr>
+            <td class="link">GY147258369</td>
+            <td>Robert Martinez</td>
+            <td><span class="badge neutral">In Transit</span></td>
+            <td>2024-01-16 06:45 AM</td>
+            <td><span class="badge purple">Home</span></td>
+            <td class="link"><a class="link" href="package-details.html">View</a> &nbsp; <a class="link" href="package-details.html">Update</a></td>
+          </tr>
+          <tr>
+            <td class="link">GY963852741</td>
+            <td>Jennifer Taylor</td>
+            <td><span class="badge success">Delivered</span></td>
+            <td>2024-01-16 08:30 AM</td>
+            <td><span class="badge info">Pickup</span></td>
+            <td class="link"><a class="link" href="package-details.html">View</a> &nbsp; <a class="link" href="package-details.html">Update</a></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="pagination">
+        <span>Page 1 of 2</span>
+        <div>
+          <button class="ghost">Previous</button>
+          <button class="primary-outline">1</button>
+          <button class="ghost">2</button>
+          <button class="ghost">Next</button>
+        </div>
+      </div>
+    </section>
+
+  </main>
+</div>
+
+</body>
+</html>

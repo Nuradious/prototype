@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Package Details · GPOC</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<div class="app">
+
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <div class="logo">GPOC<br><span>Staff Portal</span></div>
+
+    <nav>
+      <a href="index.html">Dashboard</a>
+      <a class="active" href="packages.html">Packages</a>
+      <a href="add-package.html">Add Package</a>
+      <a href="staff.html">Staff</a>
+      <a href="branches.html">Branches</a>
+      <a href="reports.html">Reports</a>
+      <a href="settings.html">Settings</a>
+    </nav>
+
+    <button class="logout">Logout</button>
+  </aside>
+
+  <main class="main">
+
+    <!-- Topbar -->
+    <header class="topbar">
+      <div>
+        <div class="breadcrumb">
+          <a href="index.html" class="link">Dashboard</a> ›
+          <a href="packages.html" class="link">Packages</a> ›
+          <span>GY123456789</span>
+        </div>
+        <h1>Guyana Post Office Corporation · Package Details</h1>
+        <p>View and manage package tracking details</p>
+      </div>
+
+      <div class="top-actions">
+        <input type="text" placeholder="Search packages..." />
+        <div class="user">KT</div>
+      </div>
+    </header>
+
+    <a class="back-link" href="packages.html">← Back to Packages</a>
+
+    <!-- Summary Card -->
+    <section class="pkg-summary">
+      <div class="pkg-left">
+        <div class="pkg-icon">📦</div>
+        <div class="pkg-meta">
+          <div class="pkg-title-row">
+            <h3 class="pkg-code">GY123456789</h3>
+            <span class="badge warning">Out for Delivery</span>
+            <span class="badge purple">Home</span>
+          </div>
+          <div class="muted">Estimated Delivery: <strong>January 17, 2025</strong></div>
+          <div class="muted">Last Updated: <strong>January 16, 2025 10:30 AM</strong></div>
+        </div>
+      </div>
+
+      <div class="pkg-qr">
+        <div class="qr-box">
+          <div class="qr">⌁⌁⌁<br/>⌁⌁⌁</div>
+          <div class="muted" style="text-align:center;margin-top:8px;">Scan for quick access</div>
+        </div>
+      </div>
+
+      <div class="pkg-agent">
+        <div class="muted" style="font-size:12px;font-weight:700;margin-bottom:8px;">Assigned Delivery Agent</div>
+        <select>
+          <option>Kevin Thompson</option>
+        </select>
+      </div>
+    </section>
+
+    <!-- Middle Grid -->
+    <div class="grid-2">
+      <!-- Timeline -->
+      <section>
+        <div class="section-header">
+          <h3>Tracking Timeline</h3>
+        </div>
+
+        <div class="timeline">
+          <div class="t-item">
+            <div class="t-icon orange">🚚</div>
+            <div class="t-content">
+              <div class="t-title">Out for Delivery</div>
+              <div class="t-sub muted">Georgetown Central · 2025-01-16 10:30 AM</div>
+              <div class="t-desc muted">Package assigned to delivery driver Kevin Thompson</div>
+            </div>
+          </div>
+
+          <div class="t-item">
+            <div class="t-icon green">🏢</div>
+            <div class="t-content">
+              <div class="t-title">Arrived at Facility</div>
+              <div class="t-sub muted">Georgetown Central · 2025-01-16 06:15 AM</div>
+              <div class="t-desc muted">Package sorted and ready for delivery</div>
+            </div>
+          </div>
+
+          <div class="t-item">
+            <div class="t-icon green">✅</div>
+            <div class="t-content">
+              <div class="t-title">Customs Clearance Complete</div>
+              <div class="t-sub muted">Georgetown Port · 2025-01-15 02:30 PM</div>
+              <div class="t-desc muted">All customs procedures completed</div>
+            </div>
+          </div>
+
+          <div class="t-item">
+            <div class="t-icon green">🧾</div>
+            <div class="t-content">
+              <div class="t-title">In Customs</div>
+              <div class="t-sub muted">Georgetown Port · 2025-01-15 09:00 AM</div>
+              <div class="t-desc muted">Package undergoing customs inspection</div>
+            </div>
+          </div>
+
+          <div class="t-item">
+            <div class="t-icon green">✈️</div>
+            <div class="t-content">
+              <div class="t-title">Arrived in Guyana</div>
+              <div class="t-sub muted">Cheddi Jagan International Airport · 2025-01-14 11:45 PM</div>
+              <div class="t-desc muted">International shipment arrived</div>
+            </div>
+          </div>
+
+          <div class="t-item">
+            <div class="t-icon green">📦</div>
+            <div class="t-content">
+              <div class="t-title">In Transit</div>
+              <div class="t-sub muted">Miami, FL, USA · 2025-01-12 08:00 AM</div>
+              <div class="t-desc muted">Package departed origin facility</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Right column -->
+      <div class="stack">
+        <!-- Package Info -->
+        <section>
+          <div class="section-header">
+            <h3>Package Information</h3>
+          </div>
+
+          <div class="info-block">
+            <div class="info-row">
+              <div class="label">Sender</div>
+              <div class="value">
+                <div><strong>Amazon Fulfillment Center</strong></div>
+                <div class="muted">Miami, FL, USA</div>
+              </div>
+            </div>
+
+            <div class="divider"></div>
+
+            <div class="info-row">
+              <div class="label">Receiver</div>
+              <div class="value">
+                <div><strong>John Smith</strong></div>
+                <div class="muted">+592-222-3456</div>
+                <div class="muted">123 Main Street, Georgetown, Guyana</div>
+              </div>
+            </div>
+
+            <div class="divider"></div>
+
+            <div class="info-grid">
+              <div class="kv">
+                <div class="label">Weight</div>
+                <div class="value">2.5 kg</div>
+              </div>
+              <div class="kv">
+                <div class="label">Branch</div>
+                <div class="value">Georgetown Central</div>
+              </div>
+              <div class="kv">
+                <div class="label">Created</div>
+                <div class="value">January 12, 2025 08:00 AM</div>
+              </div>
+              <div class="kv">
+                <div class="label">Last Updated</div>
+                <div class="value">January 16, 2025 10:30 AM</div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Action History -->
+        <section>
+          <div class="section-header">
+            <h3>Package Action History</h3>
+          </div>
+
+          <div class="history">
+            <div class="h-item">
+              <div class="h-icon">👤</div>
+              <div class="h-body">
+                <div><strong>Status updated to “Out for Delivery”</strong></div>
+                <div class="muted">by Kevin Thompson · 2025-01-16 10:30 AM</div>
+              </div>
+            </div>
+            <div class="h-item">
+              <div class="h-icon">👤</div>
+              <div class="h-body">
+                <div><strong>Assigned to delivery agent</strong></div>
+                <div class="muted">by Michelle Williams · 2025-01-16 10:15 AM</div>
+              </div>
+            </div>
+            <div class="h-item">
+              <div class="h-icon">⚙️</div>
+              <div class="h-body">
+                <div><strong>Package checked in at facility</strong></div>
+                <div class="muted">by System · 2025-01-16 06:15 AM</div>
+              </div>
+            </div>
+            <div class="h-item">
+              <div class="h-icon">👤</div>
+              <div class="h-body">
+                <div><strong>Customs clearance completed</strong></div>
+                <div class="muted">by Sarah Martinez · 2025-01-15 02:30 PM</div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <!-- Add Tracking Event -->
+    <section>
+      <div class="section-header">
+        <h3>Add Tracking Event</h3>
+      </div>
+
+      <form class="form-grid">
+        <div>
+          <label>Status <span class="req">*</span></label>
+          <select>
+            <option>Select status...</option>
+            <option>In Transit</option>
+            <option>Arrived at Facility</option>
+            <option>Out for Delivery</option>
+            <option>Delivered</option>
+            <option>Delayed</option>
+          </select>
+        </div>
+
+        <div>
+          <label>Location <span class="req">*</span></label>
+          <input type="text" placeholder="e.g., Georgetown Central" />
+        </div>
+
+        <div>
+          <label>Timestamp <span class="req">*</span></label>
+          <input type="datetime-local" />
+        </div>
+
+        <div>
+          <label>Notes / Description</label>
+          <input type="text" placeholder="Optional additional details..." />
+        </div>
+
+        <div class="form-actions">
+          <button type="button" class="btn primary">Save Event</button>
+          <button type="button" class="btn success">Mark as Delivered</button>
+          <button type="reset" class="btn ghost">Reset</button>
+        </div>
+      </form>
+    </section>
+
+  </main>
+</div>
+
+</body>
+</html>

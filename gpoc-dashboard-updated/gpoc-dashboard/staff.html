@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Staff Management · GPOC</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<div class="app">
+
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <div class="logo">GPOC<br><span>Staff Portal</span></div>
+    <nav>
+      <a href="index.html">Dashboard</a>
+      <a href="packages.html">Packages</a>
+      <a href="add-package.html">Add Package</a>
+      <a class="active" href="staff.html">Staff</a>
+      <a href="branches.html">Branches</a>
+      <a href="reports.html">Reports</a>
+      <a href="settings.html">Settings</a>
+    </nav>
+    <button class="logout">Logout</button>
+  </aside>
+
+  <main class="main">
+
+    <!-- Header -->
+    <header class="topbar">
+      <div>
+        <div class="breadcrumb">
+          <a href="index.html" class="link">Dashboard</a> › Staff Management
+        </div>
+        <h1>Guyana Post Office Corporation · Staff Management</h1>
+        <p>Manage staff members and permissions</p>
+      </div>
+
+      <div class="top-actions">
+        <input type="text" placeholder="Search packages..." />
+        <div class="user">KT</div>
+      </div>
+    </header>
+
+    <!-- Stats -->
+    <section class="stats">
+      <div class="card">
+        <h2>12</h2>
+        <p>Total Staff</p>
+      </div>
+      <div class="card">
+        <h2>9</h2>
+        <p>Active Staff</p>
+      </div>
+      <div class="card">
+        <h2>3</h2>
+        <p>Inactive Staff</p>
+      </div>
+    </section>
+
+    <!-- Staff Table -->
+    <section>
+      <div class="section-header">
+        <input class="search-wide" type="text" placeholder="Search staff by name, email, role, or branch..." />
+        <a href="add-staff.html" class="btn primary">Add Staff Member</a>
+      </div>
+
+      <div class="muted" style="margin-bottom:12px;">
+        Showing 12 of 12 staff members
+      </div>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Role</th>
+            <th>Branch</th>
+            <th>Email</th>
+            <th>Status</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Kevin Thompson</td>
+            <td>Delivery Manager</td>
+            <td>Georgetown Central</td>
+            <td>k.thompson@guyanapost.gy</td>
+            <td><span class="badge success">Active</span></td>
+            <td><a class="link" href="edit-staff.html">Edit</a></td>
+          </tr>
+          <tr>
+            <td>Michelle Williams</td>
+            <td>Supervisor</td>
+            <td>Georgetown Central</td>
+            <td>m.williams@guyanapost.gy</td>
+            <td><span class="badge success">Active</span></td>
+            <td><a class="link" href="edit-staff.html">Edit</a></td>
+          </tr>
+          <tr>
+            <td>Robert Chen</td>
+            <td>Delivery Driver</td>
+            <td>Diamond</td>
+            <td>r.chen@guyanapost.gy</td>
+            <td><span class="badge success">Active</span></td>
+            <td><a class="link" href="edit-staff.html">Edit</a></td>
+          </tr>
+          <tr>
+            <td>Sarah Martinez</td>
+            <td>Supervisor</td>
+            <td>Georgetown</td>
+            <td>s.martinez@guyanapost.gy</td>
+            <td><span class="badge success">Active</span></td>
+            <td><a class="link" href="edit-staff.html">Edit</a></td>
+          </tr>
+          <tr>
+            <td>David Kumar</td>
+            <td>Branch Manager</td>
+            <td>Anna Regina</td>
+            <td>d.kumar@guyanapost.gy</td>
+            <td><span class="badge success">Active</span></td>
+            <td><a class="link" href="edit-staff.html">Edit</a></td>
+          </tr>
+          <tr>
+            <td>Jennifer Ali</td>
+            <td>Customs Officer</td>
+            <td>Linden</td>
+            <td>j.ali@guyanapost.gy</td>
+            <td><span class="badge success">Active</span></td>
+            <td><a class="link" href="edit-staff.html">Edit</a></td>
+          </tr>
+          <tr>
+            <td>Michael Brown</td>
+            <td>Sorting Clerk</td>
+            <td>Georgetown Central</td>
+            <td>m.brown@guyanapost.gy</td>
+            <td><span class="badge neutral">Inactive</span></td>
+            <td><a class="link" href="edit-staff.html">Edit</a></td>
+          </tr>
+          <tr>
+            <td>Lisa Johnson</td>
+            <td>Delivery Driver</td>
+            <td>Georgetown Central</td>
+            <td>l.johnson@guyanapost.gy</td>
+            <td><span class="badge neutral">Inactive</span></td>
+            <td><a class="link" href="edit-staff.html">Edit</a></td>
+          </tr>
+          <tr>
+            <td>Christopher Lee</td>
+            <td>Customer Service Rep</td>
+            <td>Diamond</td>
+            <td>c.lee@guyanapost.gy</td>
+            <td><span class="badge success">Active</span></td>
+            <td><a class="link" href="edit-staff.html">Edit</a></td>
+          </tr>
+          <tr>
+            <td>Amanda White</td>
+            <td>IT Support</td>
+            <td>Georgetown Central</td>
+            <td>a.white@guyanapost.gy</td>
+            <td><span class="badge success">Active</span></td>
+            <td><a class="link" href="edit-staff.html">Edit</a></td>
+          </tr>
+          <tr>
+            <td>James Taylor</td>
+            <td>Warehouse Manager</td>
+            <td>New Amsterdam</td>
+            <td>j.taylor@guyanapost.gy</td>
+            <td><span class="badge success">Active</span></td>
+            <td><a class="link" href="edit-staff.html">Edit</a></td>
+          </tr>
+          <tr>
+            <td>Patricia Garcia</td>
+            <td>Delivery Driver</td>
+            <td>Linden</td>
+            <td>p.garcia@guyanapost.gy</td>
+            <td><span class="badge neutral">Inactive</span></td>
+            <td><a class="link" href="edit-staff.html">Edit</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+  </main>
+</div>
+
+</body>
+</html>

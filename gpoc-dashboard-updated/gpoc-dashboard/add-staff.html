@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Add Staff Member · GPOC</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<div class="app">
+
+  <aside class="sidebar">
+    <div class="logo">GPOC<br><span>Staff Portal</span></div>
+    <nav>
+      <a href="index.html">Dashboard</a>
+      <a href="packages.html">Packages</a>
+      <a href="add-package.html">Add Package</a>
+      <a class="active" href="staff.html">Staff</a>
+      <a href="branches.html">Branches</a>
+      <a href="reports.html">Reports</a>
+      <a href="settings.html">Settings</a>
+    </nav>
+    <button class="logout">Logout</button>
+  </aside>
+
+  <main class="main">
+
+    <header class="topbar">
+      <div>
+        <div class="breadcrumb">
+          <a href="index.html" class="link">Dashboard</a> ›
+          <a href="staff.html" class="link">Staff</a> ›
+          Add Staff Member
+        </div>
+        <h1>Guyana Post Office Corporation · Add Staff Member</h1>
+        <p>Add a new staff member to the system</p>
+      </div>
+
+      <div class="top-actions">
+        <input type="text" placeholder="Search packages..." />
+        <div class="user">KT</div>
+      </div>
+    </header>
+
+    <a class="back-link" href="staff.html">← Back to Staff Management</a>
+
+    <section>
+      <h3>Staff Member Information</h3>
+      <p class="muted">Fill in the details below to add a new staff member to the system.</p>
+
+      <form class="form-grid">
+        <div>
+          <label>Full Name <span class="req">*</span></label>
+          <div class="icon-input">
+            <span class="i">👤</span>
+            <input type="text" placeholder="e.g., John Smith" />
+          </div>
+        </div>
+
+        <div>
+          <label>Email Address <span class="req">*</span></label>
+          <div class="icon-input">
+            <span class="i">✉️</span>
+            <input type="email" placeholder="e.g., john.smith@guyanapost.gy" />
+          </div>
+        </div>
+
+        <div>
+          <label>Phone Number <span class="req">*</span></label>
+          <div class="icon-input">
+            <span class="i">📞</span>
+            <input type="text" placeholder="e.g., +592-222-3456" />
+          </div>
+        </div>
+
+        <div>
+          <label>Role <span class="req">*</span></label>
+          <div class="icon-input">
+            <span class="i">🧰</span>
+            <select>
+              <option>Select role...</option>
+              <option>Delivery Driver</option>
+              <option>Supervisor</option>
+              <option>Delivery Manager</option>
+              <option>Branch Manager</option>
+            </select>
+          </div>
+        </div>
+
+        <div>
+          <label>Branch <span class="req">*</span></label>
+          <div class="icon-input">
+            <span class="i">🏢</span>
+            <select>
+              <option>Select branch...</option>
+              <option>Georgetown Central</option>
+              <option>Diamond</option>
+              <option>Linden</option>
+            </select>
+          </div>
+        </div>
+
+        <div>
+          <label>Status <span class="req">*</span></label>
+          <div class="icon-input">
+            <span class="i">🟢</span>
+            <select>
+              <option>Active</option>
+              <option>Inactive</option>
+            </select>
+          </div>
+        </div>
+
+        <div>
+          <label>Staff ID <span class="req">*</span></label>
+          <div class="inline-group">
+            <div class="icon-input" style="flex:1;">
+              <span class="i">🔑</span>
+              <input type="text" placeholder="e.g., DD-GEO-1234" />
+            </div>
+            <button type="button" class="btn ghost">Generate</button>
+          </div>
+          <small class="hint">Select role and branch to auto-generate an ID</small>
+        </div>
+
+        <div>
+          <label>Password <span class="req">*</span></label>
+          <div class="icon-input">
+            <span class="i">🔒</span>
+            <input type="password" placeholder="Enter password" />
+          </div>
+          <small class="hint">Must be at least 8 characters</small>
+        </div>
+
+        <div class="full">
+          <label>Confirm Password <span class="req">*</span></label>
+          <div class="icon-input" style="max-width:520px;">
+            <span class="i">🔒</span>
+            <input type="password" placeholder="Confirm password" />
+          </div>
+        </div>
+
+        <div class="form-actions full">
+          <button type="button" class="btn primary">Create Staff Member</button>
+          <button type="reset" class="btn ghost">Cancel</button>
+        </div>
+      </form>
+    </section>
+
+  </main>
+</div>
+
+</body>
+</html>

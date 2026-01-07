@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Branches · GPOC</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<div class="app">
+
+  <aside class="sidebar">
+    <div class="logo">GPOC<br><span>Staff Portal</span></div>
+    <nav>
+      <a href="index.html">Dashboard</a>
+      <a href="packages.html">Packages</a>
+      <a href="add-package.html">Add Package</a>
+      <a href="staff.html">Staff</a>
+      <a class="active" href="branches.html">Branches</a>
+      <a href="reports.html">Reports</a>
+      <a href="settings.html">Settings</a>
+    </nav>
+    <button class="logout">Logout</button>
+  </aside>
+
+  <main class="main">
+
+    <header class="topbar">
+      <div>
+        <div class="breadcrumb">
+          <a href="index.html" class="link">Dashboard</a> › Branches
+        </div>
+        <h1>Guyana Post Office Corporation · Branches</h1>
+        <p>Manage post office branches and locations</p>
+      </div>
+
+      <div class="top-actions">
+        <input type="text" placeholder="Search packages..." />
+        <div class="user">KT</div>
+      </div>
+    </header>
+
+    <!-- Stats -->
+    <section class="stats">
+      <div class="card">
+        <div class="mini-icon">🏢</div>
+        <h2>6</h2>
+        <p>Total Branches</p>
+      </div>
+      <div class="card">
+        <div class="mini-icon">👥</div>
+        <h2>75</h2>
+        <p>Total Staff</p>
+      </div>
+      <div class="card">
+        <div class="mini-icon">📦</div>
+        <h2>426</h2>
+        <p>Active Packages</p>
+      </div>
+    </section>
+
+    <!-- Table card -->
+    <section>
+      <div class="section-header">
+        <input class="search-wide" type="text" placeholder="Search branches by name, location, or manager..." />
+      </div>
+
+      <div class="muted" style="margin-bottom:12px;">
+        Showing 6 of 6 branches
+      </div>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Branch Name</th>
+            <th>Location</th>
+            <th>Manager</th>
+            <th>Contact</th>
+            <th>Staff</th>
+            <th>Packages</th>
+            <th>Status</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><span class="b-ico">🏢</span> Georgetown Central</td>
+            <td class="muted">Robb Street, Georgetown</td>
+            <td>Michelle Williams</td>
+            <td class="muted">+592-226-4211<br/>georgetown@guyanapost.gy</td>
+            <td><span class="chip blue">24</span></td>
+            <td><span class="chip orange">156</span></td>
+            <td><span class="badge success">Active</span></td>
+            <td><a class="link" href="edit-branch.html">Edit</a></td>
+          </tr>
+          <tr>
+            <td><span class="b-ico">🏢</span> Diamond</td>
+            <td class="muted">Diamond, East Bank Demerara</td>
+            <td>Robert Chen</td>
+            <td class="muted">+592-265-3456<br/>diamond@guyanapost.gy</td>
+            <td><span class="chip blue">12</span></td>
+            <td><span class="chip orange">78</span></td>
+            <td><span class="badge success">Active</span></td>
+            <td><a class="link" href="edit-branch.html">Edit</a></td>
+          </tr>
+          <tr>
+            <td><span class="b-ico">🏢</span> New Amsterdam</td>
+            <td class="muted">Main Street, New Amsterdam</td>
+            <td>James Taylor</td>
+            <td class="muted">+592-333-2211<br/>newamsterdam@guyanapost.gy</td>
+            <td><span class="chip blue">15</span></td>
+            <td><span class="chip orange">92</span></td>
+            <td><span class="badge success">Active</span></td>
+            <td><a class="link" href="edit-branch.html">Edit</a></td>
+          </tr>
+          <tr>
+            <td><span class="b-ico">🏢</span> Linden</td>
+            <td class="muted">Mackenzie, Linden</td>
+            <td>Jennifer Ali</td>
+            <td class="muted">+592-444-5678<br/>linden@guyanapost.gy</td>
+            <td><span class="chip blue">10</span></td>
+            <td><span class="chip orange">45</span></td>
+            <td><span class="badge success">Active</span></td>
+            <td><a class="link" href="edit-branch.html">Edit</a></td>
+          </tr>
+          <tr>
+            <td><span class="b-ico">🏢</span> Anna Regina</td>
+            <td class="muted">Anna Regina, Essequibo Coast</td>
+            <td>David Kumar</td>
+            <td class="muted">+592-771-2345<br/>annaregina@guyanapost.gy</td>
+            <td><span class="chip blue">8</span></td>
+            <td><span class="chip orange">34</span></td>
+            <td><span class="badge success">Active</span></td>
+            <td><a class="link" href="edit-branch.html">Edit</a></td>
+          </tr>
+          <tr>
+            <td><span class="b-ico">🏢</span> Bartica</td>
+            <td class="muted">First Avenue, Bartica</td>
+            <td>Christopher Lee</td>
+            <td class="muted">+592-455-1234<br/>bartica@guyanapost.gy</td>
+            <td><span class="chip blue">6</span></td>
+            <td><span class="chip orange">21</span></td>
+            <td><span class="badge success">Active</span></td>
+            <td><a class="link" href="edit-branch.html">Edit</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+  </main>
+</div>
+
+</body>
+</html>
